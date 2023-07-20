@@ -35,10 +35,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_ADD) {
 				// Add a new item
 
-				ResourceCentre.setHeader("ADD");
-				ResourceCentre.setHeader("ITEM TYPES");
-				System.out.println("1. Camcorder");
-				System.out.println("2. Chromebook");
+				
 
 
 				ResourceCentre.setHeader("ADD");			

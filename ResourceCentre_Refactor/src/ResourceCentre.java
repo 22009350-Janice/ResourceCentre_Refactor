@@ -35,6 +35,7 @@ public class ResourceCentre {
 			} else if (option == OPTION_ADD) {
 				// Add a new item
 
+
 				ResourceCentre.setHeader("ADD");
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
@@ -44,7 +45,7 @@ public class ResourceCentre {
 				ResourceCentre.setHeader("ADD");			
 				itemTypeMenu();
 				
-				
+
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCORDER) {
@@ -65,16 +66,6 @@ public class ResourceCentre {
 
 			} else if (option == OPTION_LOAN) {
 				// Loan item
-
-				ResourceCentre.setHeader("LOAN");
-				ResourceCentre.setHeader("ITEM TYPES");
-				System.out.println("1. Camcorder");
-				System.out.println("2. Chromebook");
-
-
-				ResourceCentre.setHeader("LOAN");			
-				itemTypeMenu();
-				
 
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
@@ -181,10 +172,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
-					chromebookList.get(i).getDescription(),
-					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
-					chromebookList.get(i).getDueDate(), chromebookList.get(i).getOs());
+			output += String.format("%-80s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}

@@ -68,25 +68,25 @@ public class ResourceCentreTest {
 	
 	@Test
 	public void testRetrieveAllCamcorder() {
-		// Test if Item list is not null but empty -boundary
-		assertNotNull("Test if there is valid Camcorder arraylist to retrieve item", camcorderList);
-		
-		//test if the list of camcorders retrieved from the SourceCentre is empty - boundary
-		String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
-		
-		//Given an empty list, after adding 2 items, test if the size of the list is 2 - normal
-		ResourceCentre.addCamcorder(camcorderList, cc1);
-		ResourceCentre.addCamcorder(camcorderList, cc2);
-		assertEquals("Test that Camcorder arraylist size is 2", 2, camcorderList.size());
-		
-		//test if the expected output string same as the list of camcorders retrieved from the SourceCentre	
-		allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CC0011", "Nikon HDSLR", "Yes", "", "40");
-		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CC0012", "Sony DSC-RX100M7", "Yes", "", "20" );
-	
-		assertEquals("Test that ViewAllCamcorderlist", testOutput, allCamcorder);
+		  // Test if Item list is not null but empty -boundary
+		  assertNotNull("Test if there is valid Camcorder arraylist to retrieve item", camcorderList);
+		  
+		  //test if the list of camcorders retrieved from the SourceCentre is empty - boundary
+		  String allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
+		  String testOutput = "";
+		  assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
+		  
+		  //Given an empty list, after adding 2 items, test if the size of the list is 2 - normal
+		  ResourceCentre.addCamcorder(camcorderList, cc1);
+		  ResourceCentre.addCamcorder(camcorderList, cc2);
+		  assertEquals("Test that Camcorder arraylist size is 2", 2, camcorderList.size());
+		  
+		  //test if the expected output string same as the list of camcorders retrieved from the SourceCentre 
+		  allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
+		  testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CC0011", "Nikon HDSLR", "Yes", "", "40");
+		  testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CC0012", "Sony DSC-RX100M7", "Yes", "", "20" );
+		 
+		  assertEquals("Test that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
 	}
 	@Test

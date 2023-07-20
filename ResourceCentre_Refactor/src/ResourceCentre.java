@@ -35,16 +35,28 @@ public class ResourceCentre {
 
 			} else if (option == OPTION_ADD) {
 				// Add a new item
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("ADD");
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
 				System.out.println("2. Chromebook");
+<<<<<<< HEAD
+
+=======
 
 
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("ADD");			
 				itemTypeMenu();
+<<<<<<< HEAD
 				
+=======
+				
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCORDER) {
@@ -64,18 +76,30 @@ public class ResourceCentre {
 				}
 
 			} else if (option == OPTION_LOAN) {
+<<<<<<< HEAD
+				// Loan item
+=======
 				// Loan item
 
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("LOAN");
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
 				System.out.println("2. Chromebook");
 
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("LOAN");			
 				itemTypeMenu();
 				
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCORDER) {
@@ -90,17 +114,29 @@ public class ResourceCentre {
 
 			} else if (option == OPTION_RETURN) {
 				// Return item
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("RETURN");
 				ResourceCentre.setHeader("ITEM TYPES");
 				System.out.println("1. Camcorder");
 				System.out.println("2. Chromebook");
+<<<<<<< HEAD
+
+=======
 
 
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				ResourceCentre.setHeader("RETURN");				
 				itemTypeMenu();
 				
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 				int itemType = Helper.readInt("Enter option to select item type > ");
 				if (itemType == ITEM_TYPE_CAMCORDER) {
 					// Return camcorder
@@ -167,7 +203,7 @@ public class ResourceCentre {
 		}
 		return output;
 	}
-
+//hi
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION", "AVAILABLE",
@@ -181,7 +217,11 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
+<<<<<<< HEAD
+			output += String.format("%-84s \n", chromebookList.get(i).toString());
+=======
 			output += String.format("%-80s\n", chromebookList.get(i).toString());
+>>>>>>> branch 'master' of https://github.com/22009350-Janice/ResourceCentre_Refactor.git
 		}
 		return output;
 	}

@@ -55,4 +55,3 @@ public class Item {
 		this.isAvailable = isAvailable;
 	}
 }
-

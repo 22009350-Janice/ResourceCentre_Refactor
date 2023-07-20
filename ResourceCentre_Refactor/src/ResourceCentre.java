@@ -34,11 +34,7 @@ public class ResourceCentre {
 
 			} else if (option == OPTION_ADD) {
 				// Add a new item
-
-
 				
-
-
 				ResourceCentre.setHeader("ADD");			
 				itemTypeMenu();
 				
@@ -64,6 +60,9 @@ public class ResourceCentre {
 			} else if (option == OPTION_LOAN) {
 				// Loan item
 
+				ResourceCentre.setHeader("LOAN");
+				itemTypeMenu();
+				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
 				if (itemType == ITEM_TYPE_CAMCORDER) {
